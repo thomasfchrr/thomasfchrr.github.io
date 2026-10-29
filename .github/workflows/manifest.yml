@@ -1,0 +1,24 @@
+name: Manifeste des projets
+on:
+  push:
+    branches: [main]
+    paths: ['projects/**', 'tools/build.mjs']
+permissions:
+  contents: write
+jobs:
+  manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node tools/build.mjs
+      - name: Commit du manifeste si modifié
+        run: |
+          if ! git diff --quiet projects/index.json; then
+            git config user.name "github-actions"
+            git config user.email "actions@github.com"
+            git add projects/index.json
+            git commit -m "Mise à jour automatique de projects/index.json"
+            git push
+          fi
