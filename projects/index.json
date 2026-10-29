@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "slug": "rc-charge-decharge",
+      "title": "Charge et décharge d'un condensateur",
+      "subtitle": "Du modèle RC à la simulation numérique, étude complète d'un transitoire du premier ordre",
+      "summary": "Solution analytique du circuit RC, comparaison à trois schémas d'intégration (écarts, ordres de convergence et stabilité mesurés), énergie dissipée, effet des tolérances. Simulateur interactif et données reproductibles.",
+      "date": "2026-10-27",
+      "status": "termine",
+      "kind": "Théorie et simulation",
+      "domain": "Analogique",
+      "tags": [
+        "RC",
+        "Régime transitoire",
+        "Intégration numérique",
+        "SPICE",
+        "Filtre passe-bas"
+      ],
+      "order": 1,
+      "cover": ""
+    },
+    {
+      "slug": "stm32-dev-board",
+      "title": "Carte de développement STM32",
+      "subtitle": "Première carte complète autour d'un microcontrôleur STM32",
+      "summary": "Petite carte de développement autour d'un STM32, du schéma à la carte assemblée et testée.",
+      "date": "2026-10",
+      "status": "planifie",
+      "kind": "Conception de PCB",
+      "domain": "Embarqué",
+      "tags": [
+        "STM32",
+        "KiCad",
+        "PCB"
+      ],
+      "order": 2,
+      "cover": ""
+    },
+    {
+      "slug": "alimentation-buck-boost",
+      "title": "Alimentation à découpage buck-boost",
+      "subtitle": "Conversion de tension, choix de composants et contrôle de la boucle",
+      "summary": "Étude et réalisation d'un convertisseur buck-boost, avec une réflexion sur le contrôle de la boucle de régulation (analogique ou numérique).",
+      "date": "2026-10",
+      "status": "planifie",
+      "kind": "Conception de PCB",
+      "domain": "Puissance",
+      "tags": [
+        "Alimentation à découpage",
+        "Buck-boost",
+        "MOSFET",
+        "Régulation"
+      ],
+      "order": 3,
+      "cover": ""
+    }
+  ]
+}

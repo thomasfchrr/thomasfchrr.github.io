@@ -3,57 +3,78 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Thomas</title>
-  <meta name="description" content="Site personnel de Thomas">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
   <link rel="stylesheet" href="css/style.css">
+  <title>Thomas — Électronique, PCB et simulation</title>
+  <meta name="description" content="Carnet de projets d'électronique : conception de PCB, alimentations, RF et systèmes embarqués. Théorie, simulation et mesures documentées.">
+  <meta property="og:title" content="Thomas — Électronique, PCB et simulation">
+  <meta property="og:type" content="website">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#accueil" class="logo">Thomas</a>
-      <ul>
-        <li><a href="#a-propos">À propos</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./">Thomas <small>Électronique</small></a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="./#projets">Projets</a>
+        <a href="./#a-propos">À propos</a>
+        <a href="./#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Changer de thème"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 2a6 6 0 0 0 0 12z" fill="currentColor"/></svg></button>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="accueil" class="hero">
-      <h1>Bonjour, je suis Thomas</h1>
-      <p>Une phrase pour vous présenter.</p>
-    </section>
+  <main id="contenu">
+    <div class="wrap">
+      <section class="hero" aria-labelledby="titre">
+        <p class="kicker">Carnet de projets &middot; électronique</p>
+        <h1 id="titre">Analogique, RF et embarqué : du modèle à la carte.</h1>
+        <p class="lede">Je conçois des circuits et des cartes électroniques. Chaque projet est documenté de la théorie à la simulation, puis à la réalisation : hypothèses, schémas, données et limites.</p>
+        <figure class="scope">
+          <div class="scope-screen"><canvas id="scope" role="img" aria-label="Animation : réponse d'un circuit RC à un signal créneau"></canvas></div>
+          <figcaption><span>Réponse d'un circuit RC à un créneau, régime périodique établi (solution analytique).</span><span id="scope-tau"></span></figcaption>
+        </figure>
+      </section>
 
-    <section id="a-propos">
-      <h2>À propos</h2>
-      <p>Quelques lignes sur vous, votre parcours, vos centres d'intérêt.</p>
-    </section>
+      <section class="section" id="projets" aria-labelledby="h-projets">
+        <div class="section-head">
+          <h2 id="h-projets">Projets</h2>
+          <div class="filters" id="filters" aria-label="Filtrer par domaine"></div>
+        </div>
+        <ol class="index" id="project-list"><li class="empty">Chargement…</li></ol>
+      </section>
 
-    <section id="projets">
-      <h2>Projets</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Projet 1</h3>
-          <p>Description courte du projet.</p>
-          <a href="https://github.com/thomasfchrr">Voir sur GitHub</a>
-        </article>
-        <article class="card">
-          <h3>Projet 2</h3>
-          <p>Description courte du projet.</p>
-          <a href="https://github.com/thomasfchrr">Voir sur GitHub</a>
-        </article>
-      </div>
-    </section>
+      <section class="section" id="a-propos" aria-labelledby="h-apropos">
+        <div class="section-head"><h2 id="h-apropos">À propos</h2></div>
+        <div class="two-col" style="margin-top:20px">
+          <h3>Démarche</h3>
+          <div>
+            <p>Je m'intéresse à la conception de circuits imprimés et à l'électronique analogique, en particulier les alimentations à découpage, la radiofréquence et les systèmes embarqués autour des microcontrôleurs STM32.</p>
+            <p>Ce site rassemble mes projets avec le détail des calculs, des simulations reproductibles et, au fur et à mesure que les cartes sont réalisées, des mesures. Chaque page indique clairement ce qui est modélisé, simulé ou mesuré.</p>
+          </div>
+        </div>
+      </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p><a href="https://github.com/thomasfchrr">GitHub</a></p>
-    </section>
+      <section class="section" id="contact" aria-labelledby="h-contact">
+        <div class="section-head"><h2 id="h-contact">Contact</h2></div>
+        <div class="two-col" style="margin-top:20px">
+          <h3>Liens</h3>
+          <ul class="links">
+            <li>GitHub &mdash; <a href="https://github.com/thomasfchrr" rel="noopener">github.com/thomasfchrr</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Thomas</p>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span data-year>2026</span> Thomas</span>
+      <span>Site statique &middot; équations <a href="https://katex.org" rel="noopener">KaTeX</a> &middot; <a href="https://github.com/thomasfchrr/thomasfchrr.github.io" rel="noopener">source</a></span>
+    </div>
   </footer>
+  <script type="module" src="js/home.js"></script>
 </body>
 </html>

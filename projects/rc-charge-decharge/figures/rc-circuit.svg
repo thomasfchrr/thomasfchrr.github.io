@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 236" font-family="'Source Serif 4', Georgia, 'Times New Roman', serif" font-size="18">
+  <title>Schéma du circuit RC série : source vs, résistance R, condensateur C</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <!-- fils -->
+    <path d="M96 94V46H190"/>
+    <path d="M274 46H410V98"/>
+    <path d="M410 110V192H96V140"/>
+    <!-- résistance (symbole normalisé : rectangle) -->
+    <rect x="190" y="36" width="84" height="20"/>
+    <!-- condensateur : deux armatures -->
+    <path d="M388 98H432M388 110H432"/>
+    <!-- source -->
+    <circle cx="96" cy="117" r="23"/>
+    <!-- masse -->
+    <path d="M253 192v10M235 202h36M242 209h22M249 216h8"/>
+  </g>
+  <g fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="96" y="112" font-size="15">+</text>
+    <text x="96" y="131" font-size="15">−</text>
+  </g>
+  <!-- grandeurs -->
+  <g fill="currentColor" font-style="italic">
+    <text x="232" y="26" text-anchor="middle">R</text>
+    <text x="452" y="110">C</text>
+    <text x="52" y="123" text-anchor="end">v<tspan font-size="13" dy="5">s</tspan></text>
+  </g>
+  <!-- courant i -->
+  <g fill="none" stroke="var(--plot-2, #d55e00)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M318 26H350M343 20.5L350 26L343 31.5"/>
+  </g>
+  <text x="334" y="16" font-style="italic" text-anchor="middle" fill="var(--plot-2, #d55e00)">i</text>
+  <!-- tension vC -->
+  <g fill="none" stroke="var(--plot-1, #0072b2)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M492 192V52M486.5 60L492 52L497.5 60"/>
+    <path d="M440 192H488M440 46H488" stroke-dasharray="2 4" stroke-width="1.2"/>
+  </g>
+  <text x="504" y="128" font-style="italic" fill="var(--plot-1, #0072b2)">v<tspan font-size="13" dy="5">C</tspan></text>
+  <circle cx="96" cy="46" r="2.6" fill="currentColor"/>
+  <circle cx="410" cy="46" r="2.6" fill="currentColor"/>
+  <circle cx="410" cy="192" r="2.6" fill="currentColor"/>
+  <circle cx="96" cy="192" r="2.6" fill="currentColor"/>
+</svg>

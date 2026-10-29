@@ -1,0 +1,10 @@
+{
+  "name": "thomasfchrr.github.io",
+  "private": true,
+  "type": "module",
+  "description": "Portfolio d'électronique : site statique, contenu en Markdown, aucune dépendance à l'exécution.",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "check": "node tools/build.mjs --check"
+  }
+}

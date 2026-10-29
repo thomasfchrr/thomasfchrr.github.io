@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
+  <title>Projet — Thomas</title>
+  <meta name="description" content="Fiche de projet d'électronique : théorie, simulation et mesures.">
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="wrap wide">
+      <a class="brand" href="./">Thomas <small>Électronique</small></a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="./#projets">Projets</a>
+        <a href="./#a-propos">À propos</a>
+        <a href="./#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Changer de thème"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 2a6 6 0 0 0 0 12z" fill="currentColor"/></svg></button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <div class="wrap wide" id="paper-root">
+      <p class="loading">Chargement du projet…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span data-year>2026</span> Thomas</span>
+      <span>Site statique &middot; équations <a href="https://katex.org" rel="noopener">KaTeX</a> &middot; <a href="https://github.com/thomasfchrr/thomasfchrr.github.io" rel="noopener">source</a></span>
+    </div>
+  </footer>
+  <script src="assets/vendor/marked.umd.js"></script>
+  <script src="assets/vendor/katex/katex.min.js"></script>
+  <script type="module" src="js/project.js"></script>
+  <noscript><div class="wrap"><p class="notice">Cette page a besoin de JavaScript pour afficher les équations et les simulations.</p></div></noscript>
+</body>
+</html>

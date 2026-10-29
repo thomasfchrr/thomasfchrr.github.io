@@ -3,15 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page introuvable</title>
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
   <link rel="stylesheet" href="/css/style.css">
+  <title>Page introuvable — Thomas</title>
 </head>
 <body>
   <main>
-    <section class="hero">
-      <h1>404</h1>
-      <p>Cette page n'existe pas. <a href="/">Retour à l'accueil</a></p>
-    </section>
+    <div class="wrap error-page">
+      <p class="kicker">Erreur 404</p>
+      <h1>Page introuvable</h1>
+      <p>L'adresse demandée n'existe pas ou a été déplacée.</p>
+      <p><a href="/">← Retour à l'accueil</a> &middot; <a href="/#projets">Voir les projets</a></p>
+    </div>
   </main>
 </body>
 </html>
